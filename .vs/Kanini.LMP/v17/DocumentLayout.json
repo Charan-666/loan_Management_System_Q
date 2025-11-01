@@ -1,0 +1,740 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entitiesdtos\\paymenttransactiondtos\\loanaccountsummarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entitiesdtos\\paymenttransactiondtos\\loanaccountsummarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entitiesdtos\\managerentitiesdtos\\managerdashboarddto\\manager\\managerbasicdto\\loanoriginationworkflowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entitiesdtos\\managerentitiesdtos\\managerdashboarddto\\manager\\managerbasicdto\\loanoriginationworkflowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09B75DD3-1217-4102-B309-A887626F86D7}|Kanini.LMP.Data\\Kanini.LMP.Data.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.data\\repositories\\implementations\\lmprepositoy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09B75DD3-1217-4102-B309-A887626F86D7}|Kanini.LMP.Data\\Kanini.LMP.Data.csproj|solutionrelative:kanini.lmp.data\\repositories\\implementations\\lmprepositoy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA7D8C96-D2DF-4B85-B23A-F7E9D2CF774E}|Kanini.LMP.Api\\Kanini.LMP.Api.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.api\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA7D8C96-D2DF-4B85-B23A-F7E9D2CF774E}|Kanini.LMP.Api\\Kanini.LMP.Api.csproj|solutionrelative:kanini.lmp.api\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entitiesdtos\\authentication\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entitiesdtos\\authentication\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30C94F36-F592-43B7-80CE-4152D6ABE68C}|Kanini.LMP.Application\\Kanini.LMP.Application.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.application\\services\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30C94F36-F592-43B7-80CE-4152D6ABE68C}|Kanini.LMP.Application\\Kanini.LMP.Application.csproj|solutionrelative:kanini.lmp.application\\services\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30C94F36-F592-43B7-80CE-4152D6ABE68C}|Kanini.LMP.Application\\Kanini.LMP.Application.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.application\\services\\implementations\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30C94F36-F592-43B7-80CE-4152D6ABE68C}|Kanini.LMP.Application\\Kanini.LMP.Application.csproj|solutionrelative:kanini.lmp.application\\services\\implementations\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\enums\\userenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\enums\\userenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30C94F36-F592-43B7-80CE-4152D6ABE68C}|Kanini.LMP.Application\\Kanini.LMP.Application.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.application\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30C94F36-F592-43B7-80CE-4152D6ABE68C}|Kanini.LMP.Application\\Kanini.LMP.Application.csproj|solutionrelative:kanini.lmp.application\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entitiesdtos\\managerentitiesdtos\\appliedloansdto\\loanrevisioninputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entitiesdtos\\managerentitiesdtos\\appliedloansdto\\loanrevisioninputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA7D8C96-D2DF-4B85-B23A-F7E9D2CF774E}|Kanini.LMP.Api\\Kanini.LMP.Api.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA7D8C96-D2DF-4B85-B23A-F7E9D2CF774E}|Kanini.LMP.Api\\Kanini.LMP.Api.csproj|solutionrelative:kanini.lmp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA7D8C96-D2DF-4B85-B23A-F7E9D2CF774E}|Kanini.LMP.Api\\Kanini.LMP.Api.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EA7D8C96-D2DF-4B85-B23A-F7E9D2CF774E}|Kanini.LMP.Api\\Kanini.LMP.Api.csproj|solutionrelative:kanini.lmp.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\paymenttransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\paymenttransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09B75DD3-1217-4102-B309-A887626F86D7}|Kanini.LMP.Data\\Kanini.LMP.Data.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.data\\data\\lmpdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09B75DD3-1217-4102-B309-A887626F86D7}|Kanini.LMP.Data\\Kanini.LMP.Data.csproj|solutionrelative:kanini.lmp.data\\data\\lmpdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\loanproductentities\\personalloanentities\\employmentdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\loanproductentities\\personalloanentities\\employmentdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\customerentities\\loanapplicationbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\customerentities\\loanapplicationbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA7D8C96-D2DF-4B85-B23A-F7E9D2CF774E}|Kanini.LMP.Api\\Kanini.LMP.Api.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EA7D8C96-D2DF-4B85-B23A-F7E9D2CF774E}|Kanini.LMP.Api\\Kanini.LMP.Api.csproj|solutionrelative:kanini.lmp.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\enums\\customerenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\enums\\customerenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\customerentities\\junctiontable\\loanapplicant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\customerentities\\junctiontable\\loanapplicant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\customerentities\\junctiontable\\applicationdocumentlink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\customerentities\\junctiontable\\applicationdocumentlink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\managerentities\\loanoriginationworkflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\managerentities\\loanoriginationworkflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\managerentities\\loanaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\managerentities\\loanaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\loanapplicationentites\\vehicleloanapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\loanapplicationentites\\vehicleloanapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\loanapplicationentites\\personalloanapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\loanapplicationentites\\personalloanapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\loanapplicationentites\\homeloanapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\loanapplicationentites\\homeloanapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\loanproductentities\\homeloanentities\\builderinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\loanproductentities\\homeloanentities\\builderinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\loanproductentities\\personalloanentities\\financialinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\loanproductentities\\personalloanentities\\financialinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\loanproductentities\\loanproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\loanproductentities\\loanproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\loanproductentities\\vehicleloanentities\\vehicleloandetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\loanproductentities\\vehicleloanentities\\vehicleloandetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\loanproductentities\\vehicleloanentities\\vehicleinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\loanproductentities\\vehicleloanentities\\vehicleinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\loanproductentities\\vehicleloanentities\\dealerinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\loanproductentities\\vehicleloanentities\\dealerinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\loanproductentities\\homeloanentities\\propertydetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\loanproductentities\\homeloanentities\\propertydetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\loanproductentities\\homeloanentities\\homeloandetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\loanproductentities\\homeloanentities\\homeloandetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\loanproductentities\\commonloanproductentities\\documentupload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\loanproductentities\\commonloanproductentities\\documentupload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\loanproductentities\\commonloanproductentities\\declaration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\loanproductentities\\commonloanproductentities\\declaration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\loanproductentities\\commonloanproductentities\\familyemergencydetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\loanproductentities\\commonloanproductentities\\familyemergencydetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\loanproductentities\\commonloanproductentities\\addressinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\loanproductentities\\commonloanproductentities\\addressinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\loanproductentities\\commonloanproductentities\\personaldetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\loanproductentities\\commonloanproductentities\\personaldetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\loanproductentities\\commonloanproductentities\\loandetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\loanproductentities\\commonloanproductentities\\loandetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\customerentities\\emiplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\customerentities\\emiplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|c:\\users\\chara\\onedrive\\desktop\\lmp\\lmpbackend\\kanini.lmp\\kanini.lmp.database\\entities\\customerentities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{829CC301-4C57-4A16-88FA-93E5EA1CF11F}|Kanini.LMP.Database\\Kanini.LMP.Database.csproj|solutionrelative:kanini.lmp.database\\entities\\customerentities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoanAccountSummaryDTO.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\EntitiesDtos\\PaymentTransactionDtos\\LoanAccountSummaryDTO.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\EntitiesDtos\\PaymentTransactionDtos\\LoanAccountSummaryDTO.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\EntitiesDtos\\PaymentTransactionDtos\\LoanAccountSummaryDTO.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\EntitiesDtos\\PaymentTransactionDtos\\LoanAccountSummaryDTO.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwA4AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T05:36:14.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoanOriginationWorkflowDTO.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\EntitiesDtos\\ManagerEntitiesDtos\\ManagerDashboardDto\\Manager\\ManagerBasicDto\\LoanOriginationWorkflowDTO.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\EntitiesDtos\\ManagerEntitiesDtos\\ManagerDashboardDto\\Manager\\ManagerBasicDto\\LoanOriginationWorkflowDTO.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\EntitiesDtos\\ManagerEntitiesDtos\\ManagerDashboardDto\\Manager\\ManagerBasicDto\\LoanOriginationWorkflowDTO.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\EntitiesDtos\\ManagerEntitiesDtos\\ManagerDashboardDto\\Manager\\ManagerBasicDto\\LoanOriginationWorkflowDTO.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAvwBsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T05:35:38.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\EntitiesDtos\\Authentication\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\EntitiesDtos\\Authentication\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\EntitiesDtos\\Authentication\\LoginDTO.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\EntitiesDtos\\Authentication\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T05:32:22.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LMPRepositoy.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Data\\Repositories\\Implementations\\LMPRepositoy.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Data\\Repositories\\Implementations\\LMPRepositoy.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Data\\Repositories\\Implementations\\LMPRepositoy.cs",
+              "RelativeToolTip": "Kanini.LMP.Data\\Repositories\\Implementations\\LMPRepositoy.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T05:23:46.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TokenController.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Api\\Controllers\\TokenController.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Api\\Controllers\\TokenController.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Api\\Controllers\\TokenController.cs",
+              "RelativeToolTip": "Kanini.LMP.Api\\Controllers\\TokenController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T05:22:20.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ITokenService.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Application\\Services\\Interfaces\\ITokenService.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Application\\Services\\Interfaces\\ITokenService.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Application\\Services\\Interfaces\\ITokenService.cs",
+              "RelativeToolTip": "Kanini.LMP.Application\\Services\\Interfaces\\ITokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T05:18:18.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Application\\Services\\Implementations\\TokenService.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Application\\Services\\Implementations\\TokenService.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Application\\Services\\Implementations\\TokenService.cs",
+              "RelativeToolTip": "Kanini.LMP.Application\\Services\\Implementations\\TokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T05:17:58.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Application\\Services\\Implementations\\UserService.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Application\\Services\\Implementations\\UserService.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Application\\Services\\Implementations\\UserService.cs",
+              "RelativeToolTip": "Kanini.LMP.Application\\Services\\Implementations\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T05:16:22.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserEnums.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Enums\\UserEnums.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Enums\\UserEnums.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Enums\\UserEnums.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Enums\\UserEnums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T05:15:49.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\User.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\User.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T18:22:42.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "Kanini.LMP.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Api\\appsettings.json",
+              "RelativeToolTip": "Kanini.LMP.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-28T18:27:05.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Api\\Program.cs",
+              "RelativeToolTip": "Kanini.LMP.Api\\Program.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAHsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T18:26:56.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoanRevisionInputDto.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\EntitiesDtos\\ManagerEntitiesDtos\\AppliedLoansDto\\LoanRevisionInputDto.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\EntitiesDtos\\ManagerEntitiesDtos\\AppliedLoansDto\\LoanRevisionInputDto.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\EntitiesDtos\\ManagerEntitiesDtos\\AppliedLoansDto\\LoanRevisionInputDto.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\EntitiesDtos\\ManagerEntitiesDtos\\AppliedLoansDto\\LoanRevisionInputDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T12:23:15.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PaymentTransaction.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\PaymentTransaction.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\PaymentTransaction.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\PaymentTransaction.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\PaymentTransaction.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAMwBcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T11:08:56.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LMPDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Data\\Data\\LMPDbContext.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Data\\Data\\LMPDbContext.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Data\\Data\\LMPDbContext.cs",
+              "RelativeToolTip": "Kanini.LMP.Data\\Data\\LMPDbContext.cs",
+              "ViewState": "AgIAAEkBAAAAAAAAAAAmwFYBAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T06:31:16.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LoanApplicationBase.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\CustomerEntities\\LoanApplicationBase.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\CustomerEntities\\LoanApplicationBase.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\CustomerEntities\\LoanApplicationBase.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\CustomerEntities\\LoanApplicationBase.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T10:46:52.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EmploymentDetails.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\PersonalLoanEntities\\EmploymentDetails.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\PersonalLoanEntities\\EmploymentDetails.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\PersonalLoanEntities\\EmploymentDetails.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\PersonalLoanEntities\\EmploymentDetails.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T05:15:17.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Api\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Kanini.LMP.Api\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Api\\appsettings.Development.json",
+              "RelativeToolTip": "Kanini.LMP.Api\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-29T09:45:52.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CustomerEnums.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Enums\\CustomerEnums.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Enums\\CustomerEnums.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Enums\\CustomerEnums.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Enums\\CustomerEnums.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwEkAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T06:29:00.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LoanApplicant.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\CustomerEntities\\JunctionTable\\LoanApplicant.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\CustomerEntities\\JunctionTable\\LoanApplicant.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\CustomerEntities\\JunctionTable\\LoanApplicant.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\CustomerEntities\\JunctionTable\\LoanApplicant.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T06:52:44.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ApplicationDocumentLink.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\CustomerEntities\\JunctionTable\\ApplicationDocumentLink.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\CustomerEntities\\JunctionTable\\ApplicationDocumentLink.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\CustomerEntities\\JunctionTable\\ApplicationDocumentLink.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\CustomerEntities\\JunctionTable\\ApplicationDocumentLink.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAuwCIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T10:21:20.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\Notification.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\Notification.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\Notification.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\Notification.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAA3wCUAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T11:08:55.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "LoanOriginationWorkflow.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\ManagerEntities\\LoanOriginationWorkflow.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\ManagerEntities\\LoanOriginationWorkflow.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\ManagerEntities\\LoanOriginationWorkflow.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\ManagerEntities\\LoanOriginationWorkflow.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA/wCYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T11:46:22.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LoanAccount.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\ManagerEntities\\LoanAccount.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\ManagerEntities\\LoanAccount.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\ManagerEntities\\LoanAccount.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\ManagerEntities\\LoanAccount.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T06:25:49.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "VehicleLoanApplication.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanApplicationEntites\\VehicleLoanApplication.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\LoanApplicationEntites\\VehicleLoanApplication.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanApplicationEntites\\VehicleLoanApplication.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\LoanApplicationEntites\\VehicleLoanApplication.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T10:30:44.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PersonalLoanApplication.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanApplicationEntites\\PersonalLoanApplication.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\LoanApplicationEntites\\PersonalLoanApplication.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanApplicationEntites\\PersonalLoanApplication.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\LoanApplicationEntites\\PersonalLoanApplication.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T10:29:46.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "HomeLoanApplication.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanApplicationEntites\\HomeLoanApplication.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\LoanApplicationEntites\\HomeLoanApplication.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanApplicationEntites\\HomeLoanApplication.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\LoanApplicationEntites\\HomeLoanApplication.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T10:27:42.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "BuilderInformation.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\HomeLoanEntities\\BuilderInformation.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\HomeLoanEntities\\BuilderInformation.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\HomeLoanEntities\\BuilderInformation.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\HomeLoanEntities\\BuilderInformation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T18:15:41.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "FinancialInformation.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\PersonalLoanEntities\\FinancialInformation.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\PersonalLoanEntities\\FinancialInformation.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\PersonalLoanEntities\\FinancialInformation.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\PersonalLoanEntities\\FinancialInformation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T05:15:04.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "LoanProduct.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\LoanProduct.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\LoanProduct.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\LoanProduct.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\LoanProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T05:18:10.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "VehicleLoanDetails.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\VehicleLoanEntities\\VehicleLoanDetails.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\VehicleLoanEntities\\VehicleLoanDetails.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\VehicleLoanEntities\\VehicleLoanDetails.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\VehicleLoanEntities\\VehicleLoanDetails.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAqwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T06:12:37.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "DealerInformation.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\VehicleLoanEntities\\DealerInformation.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\VehicleLoanEntities\\DealerInformation.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\VehicleLoanEntities\\DealerInformation.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\VehicleLoanEntities\\DealerInformation.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T18:14:57.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "PropertyDetails.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\HomeLoanEntities\\PropertyDetails.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\HomeLoanEntities\\PropertyDetails.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\HomeLoanEntities\\PropertyDetails.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\HomeLoanEntities\\PropertyDetails.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T18:10:00.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "HomeLoanDetails.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\HomeLoanEntities\\HomeLoanDetails.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\HomeLoanEntities\\HomeLoanDetails.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\HomeLoanEntities\\HomeLoanDetails.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\HomeLoanEntities\\HomeLoanDetails.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAkwDQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T18:13:24.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "VehicleInformation.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\VehicleLoanEntities\\VehicleInformation.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\VehicleLoanEntities\\VehicleInformation.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\VehicleLoanEntities\\VehicleInformation.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\VehicleLoanEntities\\VehicleInformation.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwCYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T18:14:24.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "DocumentUpload.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\CommonLoanProductEntities\\DocumentUpload.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\CommonLoanProductEntities\\DocumentUpload.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\CommonLoanProductEntities\\DocumentUpload.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\CommonLoanProductEntities\\DocumentUpload.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAowCoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T05:14:16.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Declaration.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\CommonLoanProductEntities\\Declaration.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\CommonLoanProductEntities\\Declaration.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\CommonLoanProductEntities\\Declaration.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\CommonLoanProductEntities\\Declaration.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAACEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T18:17:40.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "FamilyEmergencyDetails.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\CommonLoanProductEntities\\FamilyEmergencyDetails.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\CommonLoanProductEntities\\FamilyEmergencyDetails.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\CommonLoanProductEntities\\FamilyEmergencyDetails.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\CommonLoanProductEntities\\FamilyEmergencyDetails.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T05:14:28.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AddressInformation.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\CommonLoanProductEntities\\AddressInformation.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\CommonLoanProductEntities\\AddressInformation.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\CommonLoanProductEntities\\AddressInformation.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\CommonLoanProductEntities\\AddressInformation.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAADMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T09:11:37.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "PersonalDetails.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\CommonLoanProductEntities\\PersonalDetails.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\CommonLoanProductEntities\\PersonalDetails.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\CommonLoanProductEntities\\PersonalDetails.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\CommonLoanProductEntities\\PersonalDetails.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAADMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T11:15:44.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "EMIPlan.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\CustomerEntities\\EMIPlan.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\CustomerEntities\\EMIPlan.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\CustomerEntities\\EMIPlan.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\CustomerEntities\\EMIPlan.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T06:31:39.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\CustomerEntities\\Customer.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\CustomerEntities\\Customer.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\CustomerEntities\\Customer.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\CustomerEntities\\Customer.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAiwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T09:11:29.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "LoanDetails.cs",
+              "DocumentMoniker": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\CommonLoanProductEntities\\LoanDetails.cs",
+              "RelativeDocumentMoniker": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\CommonLoanProductEntities\\LoanDetails.cs",
+              "ToolTip": "C:\\Users\\chara\\OneDrive\\Desktop\\LMP\\LMPBackend\\Kanini.LMP\\Kanini.LMP.Database\\Entities\\LoanProductEntities\\CommonLoanProductEntities\\LoanDetails.cs",
+              "RelativeToolTip": "Kanini.LMP.Database\\Entities\\LoanProductEntities\\CommonLoanProductEntities\\LoanDetails.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T07:22:55.673Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

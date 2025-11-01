@@ -1,0 +1,6 @@
+@Kanini.LMP.Api_HostAddress = http://localhost:5156
+
+GET {{Kanini.LMP.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

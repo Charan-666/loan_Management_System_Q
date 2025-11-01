@@ -1,0 +1,175 @@
+2025-10-30 11:11:23 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-10-30 11:11:23 [DBG] Hosting starting
+2025-10-30 11:11:23 [INF] User profile is available. Using 'C:\Users\chara\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-30 11:11:23 [DBG] Reading data from file 'C:\Users\chara\AppData\Local\ASP.NET\DataProtection-Keys\key-3b69d610-a2c1-4acd-9be3-277cdd6bc26d.xml'.
+2025-10-30 11:11:23 [DBG] Found key {3b69d610-a2c1-4acd-9be3-277cdd6bc26d}.
+2025-10-30 11:11:23 [DBG] Considering key {3b69d610-a2c1-4acd-9be3-277cdd6bc26d} with expiration date 2025-10-27 05:49:32Z as default key.
+2025-10-30 11:11:23 [DBG] Key {3b69d610-a2c1-4acd-9be3-277cdd6bc26d} is no longer under consideration as default key because it is expired, revoked, or cannot be deciphered.
+2025-10-30 11:11:23 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-10-30 11:11:23 [DBG] Decrypting secret element using Windows DPAPI.
+2025-10-30 11:11:23 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-10-30 11:11:23 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-10-30 11:11:23 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-10-30 11:11:23 [DBG] Repository contains no viable default key. Caller should generate a key with immediate activation.
+2025-10-30 11:11:23 [DBG] Policy resolution states that a new key should be added to the key ring.
+2025-10-30 11:11:23 [INF] Creating key {a959bef8-45bf-42a3-9f19-efe2d2f54383} with creation date 2025-10-30 05:41:23Z, activation date 2025-10-30 05:41:23Z, and expiration date 2026-01-28 05:41:23Z.
+2025-10-30 11:11:23 [DBG] Descriptor deserializer type for key {a959bef8-45bf-42a3-9f19-efe2d2f54383} is 'Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+2025-10-30 11:11:23 [DBG] No key escrow sink found. Not writing key {a959bef8-45bf-42a3-9f19-efe2d2f54383} to escrow.
+2025-10-30 11:11:23 [DBG] Encrypting to Windows DPAPI for current user account (G_CHARAN\chara).
+2025-10-30 11:11:23 [INF] Writing data to file 'C:\Users\chara\AppData\Local\ASP.NET\DataProtection-Keys\key-a959bef8-45bf-42a3-9f19-efe2d2f54383.xml'.
+2025-10-30 11:11:23 [DBG] Key cache expiration token triggered by 'CreateNewKey' operation.
+2025-10-30 11:11:23 [DBG] Reading data from file 'C:\Users\chara\AppData\Local\ASP.NET\DataProtection-Keys\key-3b69d610-a2c1-4acd-9be3-277cdd6bc26d.xml'.
+2025-10-30 11:11:23 [DBG] Reading data from file 'C:\Users\chara\AppData\Local\ASP.NET\DataProtection-Keys\key-a959bef8-45bf-42a3-9f19-efe2d2f54383.xml'.
+2025-10-30 11:11:23 [DBG] Found key {3b69d610-a2c1-4acd-9be3-277cdd6bc26d}.
+2025-10-30 11:11:23 [DBG] Found key {a959bef8-45bf-42a3-9f19-efe2d2f54383}.
+2025-10-30 11:11:23 [DBG] Considering key {a959bef8-45bf-42a3-9f19-efe2d2f54383} with expiration date 2026-01-28 05:41:23Z as default key.
+2025-10-30 11:11:23 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-10-30 11:11:23 [DBG] Decrypting secret element using Windows DPAPI.
+2025-10-30 11:11:23 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-10-30 11:11:23 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-10-30 11:11:23 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-10-30 11:11:23 [DBG] Using key {a959bef8-45bf-42a3-9f19-efe2d2f54383} as the default key.
+2025-10-30 11:11:23 [DBG] Key ring with default key {a959bef8-45bf-42a3-9f19-efe2d2f54383} was loaded during application startup.
+2025-10-30 11:11:23 [DBG] Middleware loaded
+2025-10-30 11:11:23 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16513 B).
+2025-10-30 11:11:23 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-10-30 11:11:23 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-10-30 11:11:24 [INF] Now listening on: https://localhost:7149
+2025-10-30 11:11:24 [INF] Now listening on: http://localhost:5156
+2025-10-30 11:11:24 [DBG] Loaded hosting startup assembly Kanini.LMP.Api
+2025-10-30 11:11:24 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-10-30 11:11:24 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-10-30 11:11:24 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-10-30 11:11:24 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-30 11:11:24 [INF] Hosting environment: Development
+2025-10-30 11:11:24 [INF] Content root path: C:\Users\chara\OneDrive\Desktop\LMP\LMPBackend\Kanini.LMP\Kanini.LMP.Api
+2025-10-30 11:11:24 [DBG] Hosting started
+2025-10-30 11:11:24 [DBG] Connection id "0HNGNERR9VSF1" accepted.
+2025-10-30 11:11:24 [DBG] Connection id "0HNGNERR9VSF1" started.
+2025-10-30 11:11:24 [DBG] Connection id "0HNGNERR9VSF1" received FIN.
+2025-10-30 11:11:24 [DBG] Connection id "0HNGNERR9VSF2" received FIN.
+2025-10-30 11:11:24 [DBG] Connection id "0HNGNERR9VSF2" accepted.
+2025-10-30 11:11:24 [DBG] Connection id "0HNGNERR9VSF2" started.
+2025-10-30 11:11:24 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-10-30 11:11:24 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-10-30 11:11:24 [DBG] Connection id "0HNGNERR9VSF1" stopped.
+2025-10-30 11:11:24 [DBG] Connection id "0HNGNERR9VSF2" stopped.
+2025-10-30 11:11:24 [DBG] Connection id "0HNGNERR9VSF1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-30 11:11:24 [DBG] Connection id "0HNGNERR9VSF2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-30 11:11:25 [DBG] Connection id "0HNGNERR9VSF3" accepted.
+2025-10-30 11:11:25 [DBG] Connection id "0HNGNERR9VSF3" started.
+2025-10-30 11:11:25 [DBG] Connection 0HNGNERR9VSF3 established using the following protocol: "Tls13"
+2025-10-30 11:11:25 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger - null null
+2025-10-30 11:11:25 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-10-30 11:11:25 [DBG] No candidates found for the request path '/swagger'
+2025-10-30 11:11:25 [DBG] Request did not match any endpoints
+2025-10-30 11:11:25 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger - 301 0 null 355.7419ms
+2025-10-30 11:11:25 [DBG] Connection id "0HNGNERR9VSF3" received FIN.
+2025-10-30 11:11:26 [DBG] Connection id "0HNGNERR9VSF4" accepted.
+2025-10-30 11:11:26 [DBG] The connection queue processing loop for 0HNGNERR9VSF3 completed.
+2025-10-30 11:11:26 [DBG] Connection id "0HNGNERR9VSF3" is closed. The last processed stream ID was 1.
+2025-10-30 11:11:26 [DBG] Connection id "0HNGNERR9VSF4" started.
+2025-10-30 11:11:26 [DBG] Connection id "0HNGNERR9VSF3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-30 11:11:26 [DBG] Connection 0HNGNERR9VSF4 established using the following protocol: "Tls13"
+2025-10-30 11:11:26 [DBG] Connection id "0HNGNERR9VSF3" stopped.
+2025-10-30 11:11:26 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/index.html - null null
+2025-10-30 11:11:26 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-10-30 11:11:26 [DBG] Request did not match any endpoints
+2025-10-30 11:11:26 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-10-30 11:11:26 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-10-30 11:11:26 [DBG] Response markup was updated to include Browser Link script injection.
+2025-10-30 11:11:26 [DBG] Response markup was updated to include browser refresh script injection.
+2025-10-30 11:11:26 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/index.html - 200 null text/html;charset=utf-8 272.4252ms
+2025-10-30 11:11:26 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/swagger-ui-bundle.js - null null
+2025-10-30 11:11:26 [INF] Request starting HTTP/2 GET https://localhost:7149/_vs/browserLink - null null
+2025-10-30 11:11:26 [INF] Request starting HTTP/2 GET https://localhost:7149/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-30 11:11:26 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/swagger-ui.css - null null
+2025-10-30 11:11:26 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2025-10-30 11:11:26 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/swagger-ui-standalone-preset.js - null null
+2025-10-30 11:11:26 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-10-30 11:11:26 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2025-10-30 11:11:26 [DBG] Request did not match any endpoints
+2025-10-30 11:11:26 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2025-10-30 11:11:26 [INF] Request finished HTTP/2 GET https://localhost:7149/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 96.5165ms
+2025-10-30 11:11:26 [DBG] Request did not match any endpoints
+2025-10-30 11:11:26 [DBG] Request did not match any endpoints
+2025-10-30 11:11:26 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-10-30 11:11:26 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/swagger-ui.css - 200 152034 text/css 163.2138ms
+2025-10-30 11:11:26 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-10-30 11:11:26 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 164.0648ms
+2025-10-30 11:11:26 [INF] Request finished HTTP/2 GET https://localhost:7149/_vs/browserLink - 200 null text/javascript; charset=UTF-8 175.4207ms
+2025-10-30 11:11:26 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-10-30 11:11:26 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 215.516ms
+2025-10-30 11:11:26 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/v1/swagger.json - null null
+2025-10-30 11:11:26 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/favicon-32x32.png - null null
+2025-10-30 11:11:26 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-10-30 11:11:26 [DBG] No candidates found for the request path '/swagger/favicon-32x32.png'
+2025-10-30 11:11:26 [DBG] Request did not match any endpoints
+2025-10-30 11:11:26 [DBG] Request did not match any endpoints
+2025-10-30 11:11:26 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-10-30 11:11:26 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/favicon-32x32.png - 200 628 image/png 44.9077ms
+2025-10-30 11:11:26 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 87.5728ms
+2025-10-30 11:11:28 [DBG] Connection id "0HNGNERR9VSF4" received FIN.
+2025-10-30 11:11:28 [DBG] Connection id "0HNGNERR9VSF4" is closed. The last processed stream ID was 15.
+2025-10-30 11:11:28 [DBG] The connection queue processing loop for 0HNGNERR9VSF4 completed.
+2025-10-30 11:11:28 [DBG] Connection id "0HNGNERR9VSF4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-30 11:11:28 [DBG] Connection id "0HNGNERR9VSF4" stopped.
+2025-10-30 11:14:31 [DBG] Connection id "0HNGNERR9VSF5" accepted.
+2025-10-30 11:14:31 [DBG] Connection id "0HNGNERR9VSF5" started.
+2025-10-30 11:14:31 [DBG] Connection 0HNGNERR9VSF5 established using the following protocol: "Tls13"
+2025-10-30 11:14:31 [INF] Request starting HTTP/2 POST https://localhost:7149/api/Token/login - application/json-patch+json 69
+2025-10-30 11:14:31 [DBG] 1 candidate(s) found for the request path '/api/Token/login'
+2025-10-30 11:14:31 [DBG] Endpoint 'Kanini.LMP.Api.Controllers.TokenController.Login (Kanini.LMP.Api)' with route pattern 'api/Token/login' is valid for the request path '/api/Token/login'
+2025-10-30 11:14:31 [DBG] Request matched endpoint 'Kanini.LMP.Api.Controllers.TokenController.Login (Kanini.LMP.Api)'
+2025-10-30 11:14:31 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-10-30 11:14:31 [DBG] The request has an origin header: 'https://localhost:7149'.
+2025-10-30 11:14:31 [INF] CORS policy execution failed.
+2025-10-30 11:14:31 [INF] Request origin https://localhost:7149 does not have permission to access the resource.
+2025-10-30 11:14:31 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-10-30 11:14:31 [INF] Executing endpoint 'Kanini.LMP.Api.Controllers.TokenController.Login (Kanini.LMP.Api)'
+2025-10-30 11:14:31 [INF] Route matched with {action = "Login", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Kanini.LMP.Database.EntitiesDtos.Authentication.LoginDTO) on controller Kanini.LMP.Api.Controllers.TokenController (Kanini.LMP.Api).
+2025-10-30 11:14:31 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-10-30 11:14:31 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-10-30 11:14:31 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-10-30 11:14:31 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-10-30 11:14:31 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-10-30 11:14:31 [DBG] Executing controller factory for controller Kanini.LMP.Api.Controllers.TokenController (Kanini.LMP.Api)
+2025-10-30 11:14:31 [INF] Executed action Kanini.LMP.Api.Controllers.TokenController.Login (Kanini.LMP.Api) in 5.9471ms
+2025-10-30 11:14:31 [INF] Executed endpoint 'Kanini.LMP.Api.Controllers.TokenController.Login (Kanini.LMP.Api)'
+2025-10-30 11:14:31 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Kanini.LMP.Data.Repositories.Interfaces.IUser' while attempting to activate 'Kanini.LMP.Api.Controllers.TokenController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method12(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Program.<>c.<<<Main>$>b__0_5>d.MoveNext() in C:\Users\chara\OneDrive\Desktop\LMP\LMPBackend\Kanini.LMP\Kanini.LMP.Api\Program.cs:line 134
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-10-30 11:14:31 [INF] Request finished HTTP/2 POST https://localhost:7149/api/Token/login - 500 null text/plain; charset=utf-8 181.7144ms
+2025-10-30 11:14:31 [DBG] Connection id "0HNGNERR9VSF5", Request id "0HNGNERR9VSF5:00000001": started reading request body.
+2025-10-30 11:14:31 [DBG] Connection id "0HNGNERR9VSF5", Request id "0HNGNERR9VSF5:00000001": done reading request body.
+2025-10-30 11:14:40 [DBG] Connection id "0HNGNERR9VSF5" received FIN.
+2025-10-30 11:14:40 [DBG] Connection id "0HNGNERR9VSF5" is closed. The last processed stream ID was 1.
+2025-10-30 11:14:40 [DBG] The connection queue processing loop for 0HNGNERR9VSF5 completed.
+2025-10-30 11:14:40 [DBG] Connection id "0HNGNERR9VSF5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-30 11:14:40 [DBG] Connection id "0HNGNERR9VSF5" stopped.
