@@ -59,6 +59,9 @@ builder.Services.AddControllers()
 // Repository registrations
 builder.Services.AddScoped(typeof(ILMPRepository<,>), typeof(LMPRepositoy<,>));
 
+// Add Memory Cache for credit score caching
+builder.Services.AddMemoryCache();
+
 // Service registrations
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IUser, UserService>();
@@ -75,6 +78,8 @@ builder.Services.AddScoped<INotificationService, NotificationService>();
 builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IPdfService, PdfService>();
 builder.Services.AddScoped<IKYCService, KYCService>();
+builder.Services.AddScoped<IDocumentService, DocumentService>();
+builder.Services.AddScoped<ICreditScoreService, CreditScoreService>();
 builder.Services.AddHostedService<EMINotificationBackgroundService>();
 
 // JWT Authentication 

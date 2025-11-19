@@ -109,8 +109,8 @@ namespace Kanini.LMP.Application.Services.Implementations
             var emailDto = new Database.EntitiesDto.Email.EmailDto
             {
                 ToEmail = email,
-                Subject = "Password Reset Request - LMP System",
-                Body = $"Hello {user.FullName},\n\nYou have requested to reset your password. Please use the following token to reset your password:\n\nReset Token: {resetToken}\n\nThis token will expire in 1 hour.\n\nIf you did not request this, please ignore this email.\n\nBest regards,\nLMP Team"
+                Subject = EmailTemplates.PasswordResetSubject,
+                Body = string.Format(EmailTemplates.PasswordResetBody, user.FullName, resetToken)
             };
 
             await _emailService.SendEmailAsync(emailDto);
@@ -130,6 +130,21 @@ namespace Kanini.LMP.Application.Services.Implementations
             user.PasswordHash = PasswordService.HashPassword(newPassword);
             user.UpdatedAt = DateTime.UtcNow;
             _resetTokens.Remove(email);
+
+            await _userRepository.UpdateAsync(user);
+            return true;
+        }
+
+        public async Task<bool> ChangePasswordAsync(int userId, string currentPassword, string newPassword)
+        {
+            var user = await _userRepository.GetByIdAsync(userId);
+            if (user == null) return false;
+
+            if (!PasswordService.VerifyPassword(currentPassword, user.PasswordHash))
+                return false;
+
+            user.PasswordHash = PasswordService.HashPassword(newPassword);
+            user.UpdatedAt = DateTime.UtcNow;
 
             await _userRepository.UpdateAsync(user);
             return true;

@@ -595,15 +595,23 @@ namespace Kanini.LMP.Data.Data
                 {
                     LoanApplicationBaseId = 1,
                     DocumentId = 1,
-                    DocumentRequirementType = "AddressProof-UtilityBill",
-                    LinkedAt = new DateTime(2025, 1, 10, 0, 0, 0, DateTimeKind.Utc)
+                    DocumentRequirementType = DocumentType.Other,
+                    LinkedAt = new DateTime(2025, 1, 10, 0, 0, 0, DateTimeKind.Utc),
+                    Status = DocumentStatus.Pending,
+                    VerificationNotes =null,
+                    VerifiedAt = null,
+                    VerifiedBy = null
                 },
                 new ApplicationDocumentLink
                 {
                     LoanApplicationBaseId = 2,
                     DocumentId = 2,
-                    DocumentRequirementType = "IncomeProof-PayStub",
-                    LinkedAt = new DateTime(2025, 10, 17, 0, 0, 0, DateTimeKind.Utc)
+                    DocumentRequirementType = DocumentType.Other,
+                    LinkedAt = new DateTime(2025, 10, 17, 0, 0, 0, DateTimeKind.Utc),
+                    Status = DocumentStatus.Pending,
+                    VerificationNotes = null,
+                    VerifiedAt = null,
+                    VerifiedBy = null
                 });
 
             // --------------------------------------------------------------------

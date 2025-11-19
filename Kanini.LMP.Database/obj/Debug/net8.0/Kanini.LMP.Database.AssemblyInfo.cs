@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kanini.LMP.Database")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49d5e670caadf218e109ffbec0f2cdff976d490b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kanini.LMP.Database")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kanini.LMP.Database")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

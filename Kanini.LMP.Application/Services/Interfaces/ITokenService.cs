@@ -12,16 +12,6 @@ namespace Kanini.LMP.Data.Repositories.Interfaces
     public interface ITokenService
     {
         string GenerateToken(User user);
-    }
-
-    public interface IUser
-    {
-        Task<User> GetByUsernameAsync(string username);
-        Task<UserDTO> CreateUserAsync(UserDTO userDto);
-        Task<UserDTO> GetUserByIdAsync(int userId);
-        Task<IReadOnlyList<UserDTO>> GetAllUsersAsync();
-        Task<UserDTO> RegisterCustomerAsync(CustomerRegistrationDTO registrationDto);
-        Task<bool> ForgotPasswordAsync(string email);
-        Task<bool> ResetPasswordAsync(string email, string resetToken, string newPassword);
+        Task<string?> AuthenticateAsync(string email, string password);
     }
 }

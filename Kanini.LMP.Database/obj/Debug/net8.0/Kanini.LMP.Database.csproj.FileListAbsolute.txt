@@ -27,3 +27,4 @@ c:\Users\chara\OneDrive\Documents\lmpQ\Kanini.LMP.Database\obj\Debug\net8.0\refi
 c:\Users\chara\OneDrive\Documents\lmpQ\Kanini.LMP.Database\obj\Debug\net8.0\Kanini.LMP.Database.pdb
 c:\Users\chara\OneDrive\Documents\lmpQ\Kanini.LMP.Database\obj\Debug\net8.0\Kanini.LMP.Database.genruntimeconfig.cache
 c:\Users\chara\OneDrive\Documents\lmpQ\Kanini.LMP.Database\obj\Debug\net8.0\ref\Kanini.LMP.Database.dll
+c:\Users\chara\OneDrive\Documents\lmpQ\Kanini.LMP.Database\obj\Debug\net8.0\Kanini.LMP.Database.sourcelink.json

@@ -2,6 +2,7 @@ using Kanini.LMP.Data.Repositories.Interfaces;
 using Kanini.LMP.Database.EntitiesDto;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace Kanini.LMP.Api.Controllers
 {
@@ -37,8 +38,42 @@ namespace Kanini.LMP.Api.Controllers
         [AllowAnonymous]
         public async Task<ActionResult<UserDTO>> CreateUser(UserDTO userDto)
         {
-            var created = await _userService.CreateUserAsync(userDto);
-            return CreatedAtAction(nameof(GetUser), new { id = created.UserId }, created);
+            try
+            {
+                var created = await _userService.CreateUserAsync(userDto);
+                return CreatedAtAction(nameof(GetUser), new { id = created.UserId }, created);
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
+
+        [HttpPost("change-password")]
+        [Authorize]
+        public async Task<ActionResult> ChangePassword([FromBody] ChangePasswordRequest request)
+        {
+            try
+            {
+                var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value!);
+                var success = await _userService.ChangePasswordAsync(userId, request.CurrentPassword, request.NewPassword);
+                
+                if (!success)
+                    return BadRequest("Current password is incorrect");
+                    
+                return Ok(new { message = "Password changed successfully" });
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+    }
+
+    public class ChangePasswordRequest
+    {
+        public string CurrentPassword { get; set; } = null!;
+        public string NewPassword { get; set; } = null!;
+    }
     }
 }

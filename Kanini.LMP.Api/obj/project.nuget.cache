@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "eHqwGiaQncw=",
+  "dgSpecHash": "O9xXA0eI3WA=",
   "success": true,
   "projectFilePath": "c:\\Users\\chara\\OneDrive\\Documents\\lmpQ\\Kanini.LMP.Api\\Kanini.LMP.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chara\\.nuget\\packages\\automapper\\15.1.0\\automapper.15.1.0.nupkg.sha512",
     "C:\\Users\\chara\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\chara\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\chara\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\chara\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\chara\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.10\\microsoft.aspnetcore.authentication.jwtbearer.8.0.10.nupkg.sha512",
     "C:\\Users\\chara\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\8.0.21\\microsoft.aspnetcore.jsonpatch.8.0.21.nupkg.sha512",

@@ -1,4 +1,5 @@
 ﻿using Kanini.LMP.Database.Entities.LoanProductEntities.CommonLoanProductEntities;
+using Kanini.LMP.Database.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -25,9 +26,18 @@ namespace Kanini.LMP.Database.Entities.CustomerEntities.JunctionTable
 
         // Additional M:M Data
         [Required]
-        public string DocumentRequirementType { get; set; } = "Unknown";  //e.g., 'This PDF is the Address Proof'
+        public DocumentType DocumentRequirementType { get; set; } = DocumentType.Other;
 
         public DateTime LinkedAt { get; set; } = DateTime.UtcNow;
+        
+        // Document verification status
+        public DocumentStatus Status { get; set; } = DocumentStatus.Pending;
+        
+        public string? VerificationNotes { get; set; }
+        
+        public DateTime? VerifiedAt { get; set; }
+        
+        public int? VerifiedBy { get; set; } // Manager who verified
 
         // Navigation Properties
         public LoanApplicationBase LoanApplicationBase { get; set; } = null!;

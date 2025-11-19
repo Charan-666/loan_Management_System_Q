@@ -311,11 +311,14 @@ namespace Kanini.LMP.Application.Services.Implementations
 
         private async Task LinkDocumentToApplicationAsync(int loanApplicationBaseId, int documentId, string documentType)
         {
+            // Convert string to DocumentType enum
+            var docType = Enum.TryParse<DocumentType>(documentType, true, out var parsedType) ? parsedType : DocumentType.Other;
+            
             var documentLink = new ApplicationDocumentLink
             {
                 LoanApplicationBaseId = loanApplicationBaseId,
                 DocumentId = documentId,
-                DocumentRequirementType = documentType,
+                DocumentRequirementType = docType,
                 LinkedAt = DateTime.UtcNow
             };
             await _documentLinkRepository.AddAsync(documentLink);

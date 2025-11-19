@@ -1,41 +1,55 @@
-using System.Security.Cryptography;
-using System.Text;
+using System.Text.RegularExpressions;
 
 namespace Kanini.LMP.Application.Services.Implementations
 {
     public class PasswordService
     {
+        /// <summary>
+        /// Hash password using BCrypt with work factor 12 (secure)
+        /// </summary>
         public static string HashPassword(string password)
         {
-            using var sha256 = SHA256.Create();
-            var salt = GenerateSalt();
-            var saltedPassword = password + salt;
-            var hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(saltedPassword));
-            return Convert.ToBase64String(hashedBytes) + ":" + salt;
+            ValidatePassword(password);
+            return BCrypt.Net.BCrypt.HashPassword(password, 12);
         }
 
+        /// <summary>
+        /// Verify password against BCrypt hash
+        /// </summary>
         public static bool VerifyPassword(string password, string hashedPassword)
         {
-            var parts = hashedPassword.Split(':');
-            if (parts.Length != 2) return false;
-            
-            var hash = parts[0];
-            var salt = parts[1];
-            
-            using var sha256 = SHA256.Create();
-            var saltedPassword = password + salt;
-            var hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(saltedPassword));
-            var computedHash = Convert.ToBase64String(hashedBytes);
-            
-            return hash == computedHash;
+            try
+            {
+                return BCrypt.Net.BCrypt.Verify(password, hashedPassword);
+            }
+            catch
+            {
+                return false;
+            }
         }
 
-        private static string GenerateSalt()
+        /// <summary>
+        /// Validate password strength
+        /// </summary>
+        public static void ValidatePassword(string password)
         {
-            using var rng = RandomNumberGenerator.Create();
-            var bytes = new byte[16];
-            rng.GetBytes(bytes);
-            return Convert.ToBase64String(bytes);
+            if (string.IsNullOrWhiteSpace(password))
+                throw new ArgumentException("Password cannot be empty");
+
+            if (password.Length < 8)
+                throw new ArgumentException("Password must be at least 8 characters long");
+
+            if (!Regex.IsMatch(password, @"[A-Z]"))
+                throw new ArgumentException("Password must contain at least one uppercase letter");
+
+            if (!Regex.IsMatch(password, @"[a-z]"))
+                throw new ArgumentException("Password must contain at least one lowercase letter");
+
+            if (!Regex.IsMatch(password, @"\d"))
+                throw new ArgumentException("Password must contain at least one digit");
+
+            if (!Regex.IsMatch(password, @"[^a-zA-Z0-9]"))
+                throw new ArgumentException("Password must contain at least one special character");
         }
     }
 }

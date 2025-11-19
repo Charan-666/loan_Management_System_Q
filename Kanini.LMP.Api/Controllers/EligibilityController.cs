@@ -1,7 +1,10 @@
 using Kanini.LMP.Application.Services.Interfaces;
 using Kanini.LMP.Database.EntitiesDto.CustomerEntitiesDto;
+using Kanini.LMP.Database.EntitiesDtos.CreditDtos;
+using Kanini.LMP.Database.Enums;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace Kanini.LMP.Api.Controllers
 {
@@ -17,49 +20,49 @@ namespace Kanini.LMP.Api.Controllers
             _eligibilityService = eligibilityService;
         }
 
-        [HttpGet("check-product/{customerId}/{loanProductId}")]
-        public async Task<ActionResult<EligibilityScoreDto>> CheckEligibility(int customerId, int loanProductId)
+
+
+        [HttpPost("check")]
+        public async Task<ActionResult> CheckEligibility([FromBody] CreditScoreRequest request)
         {
-            var eligibility = await _eligibilityService.CalculateEligibilityAsync(customerId, loanProductId);
-            return Ok(eligibility);
-        }
-
-        [HttpGet("product-status/{customerId}/{loanProductId}")]
-        public async Task<ActionResult<bool>> GetEligibilityStatus(int customerId, int loanProductId)
-        {
-            var isEligible = await _eligibilityService.IsEligibleForLoanAsync(customerId, loanProductId);
-            return Ok(new { isEligible, message = isEligible ? "Customer is eligible" : "Customer is not eligible" });
-        }
-
-        [HttpGet("overall/{customerId}")]
-        public async Task<ActionResult> CheckOverallEligibility(int customerId)
-        {
-            var eligibility = await _eligibilityService.CalculateEligibilityAsync(customerId, 0);
-            var eligibleProductIds = await _eligibilityService.GetEligibleProductsAsync(customerId);
-            
-            var allProducts = new[]
+            try
             {
-                new { ProductId = 1, ProductName = "Personal Loan", Available = eligibleProductIds.Contains(1) },
-                new { ProductId = 2, ProductName = "Vehicle Loan", Available = eligibleProductIds.Contains(2) },
-                new { ProductId = 3, ProductName = "Home Loan", Available = eligibleProductIds.Contains(3) }
-            };
+                var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value!);
+                
+                // Calculate eligibility with PAN for fresh credit score
+                var eligibility = await _eligibilityService.CalculateEligibilityAsync(userId, 0, request.PAN);
+                var eligibleProductIds = await _eligibilityService.GetEligibleProductsAsync(userId);
+                
+                var allProducts = new[]
+                {
+                    new { ProductId = 1, ProductName = "Personal Loan", Available = eligibleProductIds.Contains(1), MinScore = 55 },
+                    new { ProductId = 2, ProductName = "Vehicle Loan", Available = eligibleProductIds.Contains(2), MinScore = 55 },
+                    new { ProductId = 3, ProductName = "Home Loan", Available = eligibleProductIds.Contains(3), MinScore = 65 }
+                };
 
-            var message = eligibility.EligibilityScore switch
-            {
-                >= 65 => "Congratulations! You can apply for all loan products.",
-                >= 55 => "You can apply for Personal and Vehicle loans. Score 65+ needed for Home Loan.",
-                _ => $"Score {eligibility.EligibilityScore}/100. Need 55+ to apply for loans."
-            };
+                var message = eligibility.EligibilityScore switch
+                {
+                    >= 65 => "Congratulations! You can apply for all loan products.",
+                    >= 55 => "You can apply for Personal and Vehicle loans. Score 65+ needed for Home Loan.",
+                    _ => $"Score {eligibility.EligibilityScore}/100. Need 55+ to apply for loans."
+                };
 
-            return Ok(new
+                return Ok(new
+                {
+                    CustomerId = eligibility.CustomerId,
+                    CreditScore = eligibility.CreditScore,
+                    EligibilityScore = eligibility.EligibilityScore,
+                    Status = eligibility.EligibilityStatus,
+                    EligibleProductCount = eligibleProductIds.Count,
+                    Message = message,
+                    Products = allProducts,
+                    LastUpdated = eligibility.CalculatedOn
+                });
+            }
+            catch (ArgumentException ex)
             {
-                CustomerId = customerId,
-                EligibilityScore = eligibility.EligibilityScore,
-                Status = eligibility.EligibilityStatus,
-                EligibleProductCount = eligibleProductIds.Count,
-                Message = message,
-                Products = allProducts
-            });
+                return BadRequest(ex.Message);
+            }
         }
     }
 }

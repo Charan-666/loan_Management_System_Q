@@ -9,26 +9,40 @@ namespace Kanini.LMP.Application.Services.Implementations
     public class EligibilityService : IEligibilityService
     {
         private readonly ILMPRepository<Customer, int> _customerRepository;
+        private readonly ICreditScoreService _creditScoreService;
 
-        public EligibilityService(ILMPRepository<Customer, int> customerRepository)
+        public EligibilityService(
+            ILMPRepository<Customer, int> customerRepository,
+            ICreditScoreService creditScoreService)
         {
             _customerRepository = customerRepository;
+            _creditScoreService = creditScoreService;
         }
 
-        public async Task<EligibilityScoreDto> CalculateEligibilityAsync(int customerId, int loanProductId)
+        public async Task<EligibilityScoreDto> CalculateEligibilityAsync(int customerId, int loanProductId, string pan = null)
         {
-            var customer = await _customerRepository.GetByIdAsync(customerId);
+            // Find customer by UserId (not CustomerId)
+            var customer = await _customerRepository.GetAsync(c => c.UserId == customerId);
             if (customer == null) throw new ArgumentException("Customer not found");
 
+            // Get real-time credit score from CIBIL (refresh if PAN provided, otherwise use cache)
+            var creditScoreData = !string.IsNullOrEmpty(pan) 
+                ? await _creditScoreService.RefreshCreditScoreAsync(customerId, pan)
+                : await _creditScoreService.GetCreditScoreAsync(customerId);
+            var realTimeCreditScore = creditScoreData.Score;
+            
+            // Always update customer's stored credit score with real data
+            await _creditScoreService.UpdateCustomerCreditScoreAsync(customerId, realTimeCreditScore);
+
             var monthlyIncome = customer.AnnualIncome / 12;
-            var eligibilityScore = CalculateScore(customer, loanProductId);
+            var eligibilityScore = CalculateScore(customer, loanProductId, realTimeCreditScore);
             var status = DetermineStatus(eligibilityScore, loanProductId);
 
             return new EligibilityScoreDto
             {
-                CustomerId = customerId,
+                CustomerId = customer.CustomerId,
                 LoanProductId = loanProductId,
-                CreditScore = (int)customer.CreditScore,
+                CreditScore = realTimeCreditScore,
                 MonthlyIncome = monthlyIncome,
                 ExistingEMIAmount = 0, // Default - can be enhanced
                 DebtToIncomeRatio = 0, // Default - can be enhanced
@@ -69,15 +83,15 @@ namespace Kanini.LMP.Application.Services.Implementations
             return eligibleProducts;
         }
 
-        private double CalculateScore(Customer customer, int loanProductId)
+        private double CalculateScore(Customer customer, int loanProductId, int realTimeCreditScore)
         {
             double score = 0;
 
-            // Credit Score (40% weightage)
-            if (customer.CreditScore >= 750) score += 40;
-            else if (customer.CreditScore >= 700) score += 30;
-            else if (customer.CreditScore >= 650) score += 20;
-            else if (customer.CreditScore >= 600) score += 10;
+            // Credit Score (40% weightage) - Using real-time score
+            if (realTimeCreditScore >= 750) score += 40;
+            else if (realTimeCreditScore >= 700) score += 30;
+            else if (realTimeCreditScore >= 650) score += 20;
+            else if (realTimeCreditScore >= 600) score += 10;
 
             // Income (30% weightage)
             var monthlyIncome = customer.AnnualIncome / 12;

@@ -35,8 +35,7 @@ namespace Kanini.LMP.Database.EntitiesDtos.Authentication
         [Range(100000, 100000000, ErrorMessage = "Annual income must be between ₹1,00,000 and ₹10,00,00,000")]
         public decimal AnnualIncome { get; set; }
 
-        [Range(300, 900, ErrorMessage = "Credit score must be between 300 and 900")]
-        public decimal CreditScore { get; set; } = 650; // Default credit score
+
 
         [Required(ErrorMessage = "Home ownership status is required")]
         public HomeOwnershipStatus HomeOwnershipStatus { get; set; }

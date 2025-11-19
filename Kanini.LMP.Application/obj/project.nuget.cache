@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "/O8Hc4ZQW1w=",
+  "dgSpecHash": "OVL5x4i7FV4=",
   "success": true,
   "projectFilePath": "c:\\Users\\chara\\OneDrive\\Documents\\lmpQ\\Kanini.LMP.Application\\Kanini.LMP.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chara\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\chara\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\chara\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\chara\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\chara\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\8.0.21\\microsoft.aspnetcore.jsonpatch.8.0.21.nupkg.sha512",
     "C:\\Users\\chara\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\8.0.21\\microsoft.aspnetcore.mvc.newtonsoftjson.8.0.21.nupkg.sha512",
