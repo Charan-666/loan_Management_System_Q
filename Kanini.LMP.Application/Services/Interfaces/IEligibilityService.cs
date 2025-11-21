@@ -1,11 +1,13 @@
 using Kanini.LMP.Database.EntitiesDto.CustomerEntitiesDto;
+using Kanini.LMP.Database.EntitiesDtos.CreditDtos;
 
 namespace Kanini.LMP.Application.Services.Interfaces
 {
     public interface IEligibilityService
     {
-        Task<EligibilityScoreDto> CalculateEligibilityAsync(int customerId, int loanProductId, string pan = null);
+        Task<EligibilityScoreDto> CalculateEligibilityAsync(int customerId, int loanProductId);
         Task<bool> IsEligibleForLoanAsync(int customerId, int loanProductId = 0);
         Task<List<int>> GetEligibleProductsAsync(int customerId);
+        Task UpdateCustomerProfileAsync(int userId, EligibilityProfileRequest request);
     }
 }

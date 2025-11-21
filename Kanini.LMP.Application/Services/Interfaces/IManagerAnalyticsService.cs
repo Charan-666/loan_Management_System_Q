@@ -3,6 +3,7 @@ using Kanini.LMP.Database.EntitiesDto.ManagerEntitiesDto.LoanAnalystics;
 using Kanini.LMP.Database.EntitiesDto.ManagerEntitiesDto.LoanCentricView;
 using Kanini.LMP.Database.EntitiesDto.ManagerEntitiesDto.CustomerScape;
 using Kanini.LMP.Database.EntitiesDto.ManagerEntitiesDto.AppliedLoans;
+using Kanini.LMP.Database.EntitiesDtos.ManagerEntitiesDtos;
 
 namespace Kanini.LMP.Application.Services.Interfaces
 {
@@ -34,5 +35,14 @@ namespace Kanini.LMP.Application.Services.Interfaces
         // 5. Loan Centric View
         Task<IEnumerable<LoanProductSummaryDto>> GetLoanProductSummaryAsync();
         Task<LoanProductAnalysisDto> GetLoanProductAnalysisAsync(string loanProductType);
+
+        // 6. Risk Assessment Reports
+        Task<RiskAssessmentReportDto> GetRiskAssessmentReportAsync(DateTime fromDate, DateTime toDate);
+        
+        // 7. Compliance Reports
+        Task<ComplianceReportDto> GetComplianceReportAsync();
+        
+        // 8. Loan Performance Reports
+        Task<LoanPerformanceReportDto> GetLoanPerformanceReportAsync(DateTime fromDate, DateTime toDate);
     }
 }

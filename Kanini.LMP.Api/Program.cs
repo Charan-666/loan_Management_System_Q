@@ -79,7 +79,6 @@ builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IPdfService, PdfService>();
 builder.Services.AddScoped<IKYCService, KYCService>();
 builder.Services.AddScoped<IDocumentService, DocumentService>();
-builder.Services.AddScoped<ICreditScoreService, CreditScoreService>();
 builder.Services.AddHostedService<EMINotificationBackgroundService>();
 
 // JWT Authentication 

@@ -12,5 +12,6 @@ namespace Kanini.LMP.Application.Services.Interfaces
         // Loan Disbursement Methods
         Task<DisbursementResponseDto> CreateDisbursementAsync(DisbursementDto disbursementDto);
         Task<DisbursementResponseDto> GetDisbursementStatusAsync(string disbursementId);
+        Task<string?> TransferToCustomerAsync(int applicationId, decimal amount, string customerName);
     }
 }

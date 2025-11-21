@@ -35,5 +35,7 @@ namespace Kanini.LMP.Application.Services.Interfaces
         
         // Email with PDF attachment for loan application submission
         Task NotifyLoanApplicationSubmittedWithPdfAsync(int customerId, int applicationId, string loanType, decimal amount);
+        
+
     }
 }

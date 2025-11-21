@@ -53,6 +53,10 @@ namespace Kanini.LMP.Database.Entities.ManagerEntities
             [Column(TypeName = "decimal(18,2)")]
 
             public decimal TotalLateFeePaidAmount { get; set; } = 0m;
+            
+            // Razorpay disbursement tracking
+            [MaxLength(100)]
+            public string? DisbursementTransactionId { get; set; } // Razorpay transaction ID when money sent to customer
         }
     }
 

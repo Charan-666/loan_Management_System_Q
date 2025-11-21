@@ -1,5 +1,6 @@
 using Kanini.LMP.Application.Services.Interfaces;
 using Kanini.LMP.Database.EntitiesDto.CustomerEntitiesDto.CustomerBasicDto.EMIPlan;
+using Kanini.LMP.Database.EntitiesDtos.CustomerEntitiesDtos;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -92,6 +93,49 @@ namespace Kanini.LMP.Api.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+
+        [HttpGet("{emiId}/schedule")]
+        public async Task<IActionResult> GetEMISchedule(int emiId)
+        {
+            var schedule = await _emiCalculatorService.GenerateEMIScheduleAsync(emiId);
+            return Ok(schedule);
+        }
+
+        [HttpPost("{emiId}/prepayment")]
+        public async Task<IActionResult> CalculatePrepayment(int emiId, [FromBody] PrepaymentRequest request)
+        {
+            var calculation = await _emiCalculatorService.CalculatePrepaymentAsync(emiId, request.PrepaymentAmount);
+            return Ok(calculation);
+        }
+
+        [HttpGet("{emiId}/latefee")]
+        public async Task<IActionResult> CalculateLateFee(int emiId)
+        {
+            var lateFee = await _emiCalculatorService.CalculateLateFeeAsync(emiId, DateTime.UtcNow);
+            return Ok(new { LateFee = lateFee });
+        }
+
+        [HttpPost("restructure/calculate")]
+        public async Task<IActionResult> CalculateRestructure([FromBody] EMIRestructureDto restructureDto)
+        {
+            var result = await _emiCalculatorService.CalculateEMIRestructureAsync(restructureDto);
+            return Ok(result);
+        }
+
+        [HttpPost("restructure/apply")]
+        [Authorize(Roles = "Manager")]
+        public async Task<IActionResult> ApplyRestructure([FromBody] EMIRestructureDto restructureDto)
+        {
+            var result = await _emiCalculatorService.ApplyEMIRestructureAsync(restructureDto);
+            return Ok(result);
+        }
+
+        [HttpGet("{emiId}/complete-details")]
+        public async Task<IActionResult> GetCompleteEMIDetails(int emiId)
+        {
+            var result = await _emiCalculatorService.GetCompleteEMIDetailsAsync(emiId);
+            return result != null ? Ok(result) : NotFound();
+        }
     }
 
     public class CalculateEmiRequest
@@ -99,5 +143,10 @@ namespace Kanini.LMP.Api.Controllers
         public decimal PrincipalAmount { get; set; }
         public decimal InterestRate { get; set; }
         public int TermMonths { get; set; }
+    }
+
+    public class PrepaymentRequest
+    {
+        public decimal PrepaymentAmount { get; set; }
     }
 }

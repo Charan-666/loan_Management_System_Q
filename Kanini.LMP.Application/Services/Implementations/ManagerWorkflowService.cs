@@ -20,6 +20,7 @@ namespace Kanini.LMP.Application.Services.Implementations
         private readonly ILMPRepository<LoanDetails, int> _loanDetailsRepository;
         private readonly ILMPRepository<LoanAccount, int> _loanAccountRepository;
         private readonly INotificationService _notificationService;
+        private readonly IRazorpayService _razorpayService;
 
         public ManagerWorkflowService(
             ILMPRepository<LoanOriginationWorkflow, int> workflowRepository,
@@ -28,7 +29,8 @@ namespace Kanini.LMP.Application.Services.Implementations
             ILMPRepository<User, int> userRepository,
             ILMPRepository<LoanDetails, int> loanDetailsRepository,
             ILMPRepository<LoanAccount, int> loanAccountRepository,
-            INotificationService notificationService)
+            INotificationService notificationService,
+            IRazorpayService razorpayService)
         {
             _workflowRepository = workflowRepository;
             _applicationRepository = applicationRepository;
@@ -37,6 +39,7 @@ namespace Kanini.LMP.Application.Services.Implementations
             _loanDetailsRepository = loanDetailsRepository;
             _loanAccountRepository = loanAccountRepository;
             _notificationService = notificationService;
+            _razorpayService = razorpayService;
         }
 
         public async Task<IEnumerable<AppliedLoanListDto>> GetPendingApplicationsAsync()
@@ -248,30 +251,63 @@ namespace Kanini.LMP.Application.Services.Implementations
 
         public async Task<bool> DisburseApplicationAsync(int applicationId, int managerId, decimal disbursedAmount)
         {
-            await UpdateWorkflowStepAsync(applicationId, ManagerEnum.Disbursed, StepStatus.Completed, $"Disbursed amount: {disbursedAmount}", managerId);
-            
-            var application = await _applicationRepository.GetByIdAsync(applicationId);
-            application.Status = ApplicationStatus.Disbursed;
-            await _applicationRepository.UpdateAsync(application);
-
-            // Create loan account
-            var customer = application.Applicants.FirstOrDefault()?.Customer;
-            if (customer != null)
+            try
             {
-                var loanAccount = new LoanAccount
+                await UpdateWorkflowStepAsync(applicationId, ManagerEnum.Disbursed, StepStatus.InProgress, $"Disbursement initiated: {disbursedAmount}", managerId);
+                
+                // Get application and customer details
+                var application = await _applicationRepository.GetByIdAsync(applicationId);
+                var applicantCustomer = application.Applicants.FirstOrDefault()?.Customer;
+                var user = applicantCustomer != null ? await _userRepository.GetByIdAsync(applicantCustomer.UserId) : null;
+                var customerName = user?.FullName ?? "Customer";
+                
+                // Use Razorpay to transfer money to customer
+                var razorpayTransactionId = await _razorpayService.TransferToCustomerAsync(applicationId, disbursedAmount, customerName);
+                
+                if (!string.IsNullOrEmpty(razorpayTransactionId))
                 {
-                    LoanApplicationBaseId = applicationId,
-                    CustomerId = customer.CustomerId,
-                    CurrentPaymentStatus = LoanPaymentStatus.Active,
-                    DisbursementDate = DateTime.UtcNow,
-                    TotalLoanAmount = disbursedAmount,
-                    PrincipalRemaining = disbursedAmount,
-                    LastStatusUpdate = DateTime.UtcNow
-                };
-                await _loanAccountRepository.AddAsync(loanAccount);
+                    // Update application status
+                    application.Status = ApplicationStatus.Disbursed;
+                    await _applicationRepository.UpdateAsync(application);
+                    
+                    // Create loan account with Razorpay transaction ID
+                    if (applicantCustomer != null)
+                    {
+                        var loanAccount = new LoanAccount
+                        {
+                            LoanApplicationBaseId = applicationId,
+                            CustomerId = applicantCustomer.CustomerId,
+                            CurrentPaymentStatus = LoanPaymentStatus.Active,
+                            DisbursementDate = DateTime.UtcNow,
+                            TotalLoanAmount = disbursedAmount,
+                            PrincipalRemaining = disbursedAmount,
+                            LastStatusUpdate = DateTime.UtcNow,
+                            DisbursementTransactionId = razorpayTransactionId
+                        };
+                        await _loanAccountRepository.AddAsync(loanAccount);
+                    }
+                    
+                    await UpdateWorkflowStepAsync(applicationId, ManagerEnum.Disbursed, StepStatus.Completed, $"Disbursed ₹{disbursedAmount} via Razorpay: {razorpayTransactionId}", managerId);
+                    
+                    // Notify customer
+                    if (applicantCustomer != null)
+                    {
+                        await _notificationService.NotifyLoanDisbursedAsync(applicantCustomer.UserId, managerId, disbursedAmount, applicationId);
+                    }
+                    
+                    return true;
+                }
+                else
+                {
+                    await UpdateWorkflowStepAsync(applicationId, ManagerEnum.Disbursed, StepStatus.Failed, "Razorpay transfer failed", managerId);
+                    return false;
+                }
             }
-
-            return true;
+            catch (Exception ex)
+            {
+                await UpdateWorkflowStepAsync(applicationId, ManagerEnum.Disbursed, StepStatus.Failed, $"Disbursement failed: {ex.Message}", managerId);
+                return false;
+            }
         }
 
         private LoanOriginationWorkflowDTO MapToWorkflowDto(LoanOriginationWorkflow workflow)
